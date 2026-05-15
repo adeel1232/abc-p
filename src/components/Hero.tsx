@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
 
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Adeel Ahmad CV.pdf";
+    link.download = "resume.pdf";
     link.click();
 
     setTimeout(() => {
