@@ -60,7 +60,10 @@ export const Experience: React.FC = () => {
                     <Briefcase className="w-4 h-4 text-cyan-400" />
                   </div>
 
+                  
+
                   {/* Content Card */}
+
                   <div className="w-full sm:w-[calc(50%-2.5rem)] pl-8 sm:pl-0">
                     <div className="p-6 sm:p-8 rounded-3xl glass-card hover:border-cyan-500/40 transition-all duration-300 shadow-xl group relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-cyan-500/10 to-transparent rounded-full blur-2xl group-hover:from-cyan-500/20 transition-all" />

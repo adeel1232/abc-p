@@ -59,45 +59,70 @@ export const Contact: React.FC = () => {
               Whether you have a startup idea, need a full-stack developer, or just want to discuss web technology, feel free to reach out. I will respond within 24 hours.
             </p>
 
-            {/* Email Card */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 flex items-center gap-4 hover:border-cyan-500/40 transition-all group">
-              <div className="p-4 rounded-xl bg-slate-900 text-cyan-400 border border-slate-800 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
-                <Mail className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-xs font-code uppercase text-slate-500 block mb-1">Email Address</span>
-                <a href={`mailto:${portfolioData.personalInfo.email}`} className="text-white font-semibold hover:text-cyan-400 transition-colors">
-                  {portfolioData.personalInfo.email}
-                </a>
-              </div>
-            </div>
+        {/* Email Card */}
+<div className="p-6 rounded-2xl glass-card border border-slate-800 flex items-center gap-4 hover:border-cyan-500/40 transition-all group">
+  <div className="p-4 rounded-xl bg-slate-900 text-cyan-400 border border-slate-800 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+    <Mail className="w-6 h-6" />
+  </div>
+  <div>
+    <span className="text-xs font-code uppercase text-slate-500 block mb-1">
+      Email Address
+    </span>
 
-            {/* WhatsApp Card */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 flex items-center gap-4 hover:border-emerald-500/40 transition-all group">
-              <div className="p-4 rounded-xl bg-slate-900 text-emerald-400 border border-slate-800 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
-                <MessageSquare className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-xs font-code uppercase text-slate-500 block mb-1">Instant Chat</span>
-                <a href={portfolioData.personalInfo.socials.whatsapp} target="_blank" rel="noreferrer" className="text-white font-semibold hover:text-emerald-400 transition-colors flex items-center gap-2">
-                  <span>WhatsApp Chat</span>
-                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-                </a>
-              </div>
-            </div>
+    <a
+      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${portfolioData.personalInfo.email}`}
+      target="_blank"
+      rel="noreferrer"
+      className="text-white font-semibold hover:text-cyan-400 transition-colors"
+    >
+      {portfolioData.personalInfo.email}
+    </a>
+  </div>
+</div>
+<div className="p-6 rounded-2xl glass-card border border-slate-800 hover:border-emerald-500/40 transition-all group">
+  <a
+    href={portfolioData.personalInfo.socials.whatsapp}
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center gap-4"
+  >
+    <div className="p-4 rounded-xl bg-slate-900 text-emerald-400 border border-slate-800 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+      <MessageSquare className="w-6 h-6" />
+    </div>
 
-            {/* Location Card */}
-            <div className="p-6 rounded-2xl glass-card border border-slate-800 flex items-center gap-4 hover:border-blue-500/40 transition-all group">
-              <div className="p-4 rounded-xl bg-slate-900 text-blue-400 border border-slate-800 group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-white transition-all">
-                <MapPin className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-xs font-code uppercase text-slate-500 block mb-1">Current Base</span>
-                <span className="text-white font-semibold">
-                  {portfolioData.personalInfo.location}
-                </span>
-              </div>
-            </div>
+    <div>
+      <span className="text-xs font-code uppercase text-slate-500 block mb-1">
+        WhatsApp
+      </span>
+
+      <div className="text-white font-semibold hover:text-emerald-400 transition-colors flex items-center gap-2">
+        <span>WhatsApp Chat</span>
+        <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
+      </div>
+    </div>
+  </a>
+</div>
+
+{/* Location Card */}
+<div className="p-6 rounded-2xl glass-card border border-slate-800 flex items-center gap-4 hover:border-blue-500/40 transition-all group">
+  <div className="p-4 rounded-xl bg-slate-900 text-blue-400 border border-slate-800 group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-white transition-all">
+    <MapPin className="w-6 h-6" />
+  </div>
+  <div>
+    <span className="text-xs font-code uppercase text-slate-500 block mb-1">
+      Current Base
+    </span>
+
+    <a
+      href="https://www.google.com/maps/place/Pakistan"
+      target="_blank"
+      rel="noreferrer"
+      className="text-white font-semibold hover:text-blue-400 transition-colors"
+    >
+      {portfolioData.personalInfo.location}
+    </a>
+  </div>
+</div>
 
             {/* Stylized Google Map Placeholder / IFrame */}
             <div className="rounded-2xl overflow-hidden border border-slate-800 h-64 relative shadow-xl">
