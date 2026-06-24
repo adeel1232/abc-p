@@ -159,7 +159,7 @@ export const portfolioData = {
       image: "movie.png",
       tags: ["React", "Socket.io", "Express", "MongoDB", "JWT", "Tailwind"],
       liveUrl: "https://movie-app-iota-dun-15.vercel.app/",
-      githubUrl: "https://github.com/adeel",
+      githubUrl: "https://github.com",
       featured: true
     },
     {
@@ -207,7 +207,7 @@ export const portfolioData = {
       image: "moblie.png",
       tags: ["React", "Framer Motion", "Tailwind CSS", "Vercel"],
       liveUrl: "https://shopping-mobile.vercel.app/",
-      githubUrl: "https://github.com/adeel",
+      githubUrl: "https://github.com",
       featured: false
     }
   ] as Project[],
